@@ -18,7 +18,7 @@ class Excercise(models.Model):
 	description = models.CharField(max_length=200)
 
 class Workout(models.Model):
-	Session = models.ForeignKey(Session)
+	session = models.ForeignKey(Session)
 	excercise = models.OneToOneField(Excercise)
 
 class Sets(models.Model):
