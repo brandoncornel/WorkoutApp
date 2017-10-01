@@ -1,5 +1,10 @@
 <div ng-controller="WorkoutController">
-    <div>
-        {{ message }}
-    </div>
+  Users
+  <div ng-repeat="user in users">
+      <div style="margin-left: 20px;">
+          name: {{ user.name }} <br/>
+          weight: {{ user.weight }} <br/>
+          <hr/>
+      </div>
+  </div>
 </div>
