@@ -1,0 +1,23 @@
+{
+  "name": "workout_app",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "bcc4679 <bcc4679@mail.rit.edu>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "angular-bootstrap": "^1.3.3"
+  }
+}

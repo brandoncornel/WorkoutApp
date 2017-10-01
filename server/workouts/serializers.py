@@ -1,27 +1,27 @@
 from rest_framework import serializers
 from workouts.models import *
 
-class UserSerializer(models.Model):
+class UserSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = User
 		fields = ("name", "weight")
 
-class SessionSerializer(models.Model):
+class SessionSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Session
 		fields = ("date", "user")
 
-class ExcerciseSerializer(models.Model):
+class ExcerciseSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Excercise
 		fields = ("name", "description")
 
-class WorkoutSerializer(models.Model):
+class WorkoutSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Workout
 		fields = ("session", "excercise")
 
-class SetsSerializer(models.Model):
+class SetsSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Sets
 		fields = ("workout", "weight", "sets", "reps")

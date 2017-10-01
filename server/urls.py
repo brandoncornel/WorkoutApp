@@ -15,7 +15,19 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from rest_framework.routers import DefaultRouter
+from workouts.views import *
+
+router = DefaultRouter()
+router.register(prefix='users',viewset=UserViewSet)
+router.register(prefix='sessions',viewset=SessionViewSet)
+router.register(prefix='excercises',viewset=ExcerciseViewSet)
+router.register(prefix='workouts',viewset=WorkoutViewSet)
+router.register(prefix='sets',viewset=SetsViewSet)
+
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls)
 ]
+
+urlpatterns = router.urls

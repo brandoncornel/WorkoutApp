@@ -1,0 +1,5 @@
+<div ng-controller="WorkoutController">
+    <div>
+        {{ message }}
+    </div>
+</div>
