@@ -1,7 +1,7 @@
 workouts
     .factory('Sessions', function($resource) {
         return $resource(
-            'http://localhost:8000/sessions/:id/',
+            'http://127.0.0.1:8000/sessions/:id/',
             {},
             {
                 'query': {

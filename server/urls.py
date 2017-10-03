@@ -18,6 +18,9 @@ from django.contrib import admin
 from rest_framework.routers import DefaultRouter
 from workouts.views import *
 
+
+
+
 router = DefaultRouter()
 router.register(prefix='users',viewset=UserViewSet)
 router.register(prefix='sessions',viewset=SessionViewSet)

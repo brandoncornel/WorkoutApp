@@ -3,5 +3,9 @@ workouts.controller('WorkoutController', function($scope, Workouts, Excercises, 
         	$scope.users = data
         });
 
+        $scope.createUser = function(){
+        	Users.save('{"name":"CORNEL","weight":200000}')
+        }
+
         
 });

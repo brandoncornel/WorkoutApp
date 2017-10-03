@@ -11,6 +11,7 @@ workouts
                         'Content-Type':'application/json'
                     }
                 }
+                ,'save':   {method:'POST'}
             },
             {
                 stripTrailingSlashes: false
